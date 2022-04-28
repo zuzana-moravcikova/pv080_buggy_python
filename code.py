@@ -28,7 +28,7 @@ def fetch_website(urllib_version, url):
     # Fetch and print the requested URL
     http = urllib.PoolManager()
     request = http.request('GET', url)
-    return r.data
+    return request.data
 
 
 
